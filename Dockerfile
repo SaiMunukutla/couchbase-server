@@ -36,6 +36,7 @@ FROM ubuntu:12.04
  
  # Add bootstrap script 
  COPY scripts/entrypoint.sh / 
+ RUN chmod +x /*.sh
  ENTRYPOINT ["/entrypoint.sh"] 
  CMD ["couchbase-server"] 
  
