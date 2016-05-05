@@ -43,3 +43,4 @@ FROM ubuntu:12.04
  
  EXPOSE 8091 8092 8093 11207 11210 11211 18091 18092 
  VOLUME /opt/couchbase/var 
+ RUN mkdir Name
