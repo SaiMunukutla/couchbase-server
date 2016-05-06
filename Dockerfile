@@ -32,7 +32,7 @@ FROM ubuntu:12.04
  
  # Add runit script for couchbase-server 
  COPY scripts/run /etc/service/couchbase-server/run 
- 
+ RUN chmod +x /etc/service/couchbase-server/run
  
  # Add bootstrap script 
  COPY scripts/entrypoint.sh / 
